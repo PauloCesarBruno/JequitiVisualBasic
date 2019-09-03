@@ -9,7 +9,7 @@
 
     Private Const MF_BYCOMMAND = &H0&
 
-    Function RemoveXButton(ByVal iHWND As Integer) As Integer
+    Function RemoveXButton(ByVal iHWND As Integer) As 
 
         Dim iSysMenu As Integer
 
