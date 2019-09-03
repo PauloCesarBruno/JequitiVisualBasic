@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4C484A1-8640-4241-A74C-A7162FDD9021}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Natura.My.MyApplication</StartupObject>
+    <RootNamespace>Natura</RootNamespace>
+    <AssemblyName>Natura</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Natura.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Natura.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BancoNaturaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoNaturaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BancoNaturaDataSet.vb">
+      <DependentUpon>BancoNaturaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalendario.Designer.vb">
+      <DependentUpon>FrmCalendario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalendario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.vb">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioClientes.Designer.vb">
+      <DependentUpon>FrmRelatorioClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorioClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorioVendas.Designer.vb">
+      <DependentUpon>FrmRelatorioVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorioVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSenha.Designer.vb">
+      <DependentUpon>FrmSenha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSenha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVendas.Designer.vb">
+      <DependentUpon>FrmVendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashScreen2.Designer.vb">
+      <DependentUpon>SplashScreen2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalendario.resx">
+      <DependentUpon>FrmCalendario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioClientes.resx">
+      <DependentUpon>FrmRelatorioClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorioVendas.resx">
+      <DependentUpon>FrmRelatorioVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSenha.resx">
+      <DependentUpon>FrmSenha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVendas.resx">
+      <DependentUpon>FrmVendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="RptClientes.rdlc" />
+    <EmbeddedResource Include="RptVendas.rdlc" />
+    <EmbeddedResource Include="SplashScreen2.resx">
+      <DependentUpon>SplashScreen2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BancoNaturaDataSet.xsc">
+      <DependentUpon>BancoNaturaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BancoNaturaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoNaturaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoNaturaDataSet.xss">
+      <DependentUpon>BancoNaturaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Natura.jpg" />
+    <None Include="Resources\1474146229_Money.ico" />
+    <None Include="Resources\1474146818_Add.ico" />
+    <None Include="Resources\1474148233_Timetable.ico" />
+    <None Include="Resources\1474146810_Search.ico" />
+    <None Include="Resources\1474146666_3.ico" />
+    <None Include="Resources\1474146711_6.ico" />
+    <None Include="Resources\1474146644_1.ico" />
+    <None Include="Resources\Marcelo Crivella 01 Vai Arrebentar.wav" />
+    <None Include="Resources\1474146355_cross-24.ico" />
+    <None Include="Resources\1474146578_volume-24.ico" />
+    <None Include="Resources\1474148287_10.ico" />
+    <None Include="Resources\1474146826_User.ico" />
+    <None Include="Resources\1474147252_people.ico" />
+    <None Include="Resources\1474146451_new-24.ico" />
+    <None Include="Resources\1474146887_Undo.ico" />
+    <None Include="Resources\1474147051_07_note.ico" />
+    <None Include="Resources\1474146306_Calculator.ico" />
+    <None Include="Resources\1474146387_settings-24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Natura.gif" />
+    <None Include="Resources\stock_lock_broken.ico" />
+    <None Include="Resources\1474146866_Key1.ico" />
+    <None Include="Resources\1474148287_101.ico" />
+    <None Include="Resources\1474146652_4.ico" />
+    <None Include="Resources\1474146791_Log Out.ico" />
+    <None Include="Resources\1474146704_10.ico" />
+    <None Include="Resources\preferences_desktop_cryptography.ico" />
+    <None Include="Resources\1474146866_Key.ico" />
+    <None Include="Resources\1474147582_HP-GarageBand-Dock-512.ico" />
+    <None Include="Resources\1474147489_website-builder-px-png.ico" />
+    <None Include="Resources\1474147123_DeleteRed.ico" />
+    <None Include="Resources\1474146205_Print.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1474148423_diagram_v2-28.ico" />
+    <None Include="Resources\1474147171_PaperClip4_Black1.ico" />
+    <None Include="Resources\1474148384_draft.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jeq2.jpg" />
+    <None Include="Resources\Jequiti.jpg" />
+    <None Include="Resources\1474146957_Globe.ico" />
+    <None Include="Resources\1474147081_IE.ico" />
+    <None Include="Resources\1474147171_PaperClip4_Black.ico" />
+    <None Include="Resources\Avon03.png" />
+    <None Include="Resources\Cosmetico.jpg" />
+    <None Include="Resources\Avon 02.jpg" />
+    <None Include="Resources\1474146879_Calendar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1474146900_Redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BancoNatura.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\Jeq21.jpg" />
+    <None Include="Resources\1474147326_lock.ico" />
+    <None Include="Resources\flechaizquierda.gif" />
+    <None Include="Resources\arrowa.gif" />
+    <None Include="Resources\cubeg1.gif" />
+    <None Include="Resources\1474146791_Log Out1.ico" />
+    <None Include="Resources\set06.gif" />
+    <None Include="Resources\arrow_refresh_15732.ico" />
+    <None Include="Resources\ios7-refresh_icon-icons.com_50177.ico" />
+    <None Include="Resources\refresh_17814 %282%29.ico" />
+    <None Include="Resources\refresh_17814 %281%29.ico" />
+    <None Include="Resources\refresh_17814.ico" />
+    <None Include="Resources\refresh_icon-icons.com_50052.ico" />
+    <None Include="Resources\66148.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

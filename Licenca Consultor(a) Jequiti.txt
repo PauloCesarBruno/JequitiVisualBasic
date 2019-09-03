@@ -1,0 +1,8 @@
+Termo De Licença:
+
+Declaro que reconheço os direitos reservados ao Programador Paulo Cesar C. Bruno, autor do Programa; Sendo assim, me comprometo a não didtribuir cópia do Programa "Consultor(a) Jequiti" a terceiros sem autorização POR ESCRITO do Programador; O Programa "Consultor(a) Jequiti" tem o objetivo que é o de auxiliar o(a) Consultor(a) da Jequiti Cosméticos a gerir suas vendas com agilidade e presteza, fornecendo cálculos Instantâneos, inclusive fechamentos mensais gerados em relatórios.
+
+Todos os Direitos Sobre este programa (Conultor(a) Jequiti) são reservados ao PROGRAMADOR.....
+Não é autorizado cópia total ou parcial deste, sob pena da Legislação Vigente. 
+Verssão: 1.0.0
+Todos os Direitos Reservados.
